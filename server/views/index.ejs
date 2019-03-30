@@ -1,0 +1,29 @@
+<% include ./partials/header.ejs %>
+<!--LOVEJOTSingh-300928227-->
+<!--Homepage Content-->
+      <div class="container">
+        <div class="jumbotron">
+
+         <% if(title=="Home"){%>
+            <h1 class="display-4">Mission Statement</h1>
+            <p class="lead">Software Engineer with excellent programming,database skills and effective communication abilities that will be utilized in IT Environment. Experienced in web designing using WordPress to providing excellent service within a work team.</p>
+            <hr class="my-4">
+            <p></p>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="/about" role="button">More info?</a>
+            </p>
+            <%} %>
+
+             <% if(title=="Contact"){%>
+             <h1 class="text=center"><b><%=title %></b></h1>
+             <%} %>
+
+              <% if ((title == "Contact") && (displayName == "Lovejot Singh")) { %>
+          <a class="btn btn-primary" href="/contact-list" role="button">Contact List</a>
+        <% } %>
+     </div>
+        
+    </div>
+
+  <% include ./partials/footer.ejs %>
+
